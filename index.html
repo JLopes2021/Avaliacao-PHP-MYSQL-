@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Documento</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="responsive.css"
+      media="screen and (max-width: 768px)"
+    />
+
+    <meta http-equiv="refresh" content="5">
+    <link rel="stylesheet" href="print.css" media="print">
+  </head>
+  <body>
+      <header>
+                  <nav>
+                      <ul>
+                          <li>
+                              <a href="#">Produtos</a>
+                          </li>
+                          <li>
+                              <a href="#">Cores</a>
+                          </li>
+                          <li>
+                              <a href="#">Politicas de desconto</a>
+                          </li>
+
+                      </ul>
+                  </nav>
+              </div>
+          </div>
+      </header>
+      <center>
+          <br>
+          <h1>Produtos</h1>
+          <hr>
+
+          <button class="bt bt-vd" onclick="alert('Olá')">Criar Produtos</button>
+
+
+      </center>
+
+
+      <table>
+          <thead>
+              <tr>
+                  <th>ID</th>
+                  <th>NOME</th>
+                  <th>COR</th>
+                  <th>PREÇO</th>
+                  <th>DESCONTO</th>
+                  <th>SUBTOTAL</th>
+                  <th>Atualizar</th>
+                  <th>Excluir</th>
+              </tr>
+          </thead>
+
+          <tbody>
+              <tr>
+                  <td>1</td>
+                  <td>MAÇA</td>
+                  <td>Vermelha</td>
+                  <td>R$ 0.87</td>
+                  <td>R$ 0.16</td>
+                  <td>R$ 0.71</td>
+                  <td>
+                      <a class="bt bt-lj" href="#">Atualizar Produto</a>
+                  </td>
+                  <td>
+                      <a class="bt bt-vm" onclick="alert('Olá')">Excluir</a>
+                  </td>
+
+              </tr>
+          </tbody>
+      </table>
+
+
+      <a href="#modal" >Abrir janela modal</a>
+
+      <div class="modal" id="modal" tabindex="-1">
+          <a href="#" class="modal__overlay" aria-label="Fechar"></a>
+          <div class="modal__content">
+              <a href="#" class="modal__close" aria-label="Fechar">x</a>
+              <div>Conteúdo qualquer.</div>
+          </div>
+      </div>
+
+      <script src="menu.js"></script>
+  </body>
+</html>

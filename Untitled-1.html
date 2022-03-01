@@ -1,0 +1,117 @@
+
+   
+<!DOCTYPE html>
+<html>
+  <head>
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <title>Teste Titam</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="responsive.css"
+      media="screen and (max-width: 768px)"
+    />
+	
+  </head>
+  <body>
+      <header>
+          <div class="container">
+              <img src="./images/ptlogo.png"
+                   alt="Pratics" />
+              <div class="menu-section">
+                  <div class="menu-toggle">
+                      <div class="one"></div>
+                      <div class="two"></div>
+                      <div class="three"></div>
+                  </div>
+                  <nav>
+                      <ul>
+                          <li>
+                              <a href="#">Produtos</a>
+                          </li>
+                          <li>
+                              <a href="#">Cores</a>
+                          </li>
+                          <li>
+                              <a href="#">Politicas de desconto</a>
+                          </li>
+
+                      </ul>
+                  </nav>
+              </div>
+          </div>
+      </header>
+      <center>
+          <br>
+          <h1>Produtos</h1>
+          <hr>
+
+          <button class="bt bt-vd" onclick="MostrarCriarProduto()">Criar Produtos</button>
+
+
+      </center>
+
+
+      <table>
+          <thead>
+              <tr>
+                  <th>ID</th>
+                  <th>NOME</th>
+                  <th>COR</th>
+                  <th>REGIAO</th>
+                  <th>PREÇO</th>
+                  <th>DESCONTO</th>
+                  <th>SUBTOTAL</th>
+                  <th>ATUALIZAR</th>
+                  <th>EXCLUIR</th>
+              </tr>
+          </thead>
+
+          <tbody id="table">
+          
+              <tr>
+             
+                  <td>1</td>
+                  <td>MACA</td>
+                  <td>Vermelha</td>
+                  <td>1</td>
+                  <td>R$ 0.87</td>
+                  <td>R$ 0.16</td>
+                  <td>R$ 0.71</td>
+                  <td>
+                      <a class="bt bt-lj" href="#">Atualizar Produto</a>
+                  </td>
+                  <td>
+                      <a class="bt bt-vm" onclick="alert('Ola')">Excluir</a>
+                  </td>
+
+              </tr>
+              
+          
+          </tbody>
+      </table>
+
+     
+      <a href="#modal" style='display:none' id='abrirmodal'>Abrir janela modal</a>
+
+      <div class="modal" id="modal" tabindex="-1">
+          <a href="#" class="modal__overlay" aria-label="Fechar"></a>
+          <div class="modal__content">
+              <a href="#" class="modal__close" aria-label="Fechar">x</a>
+              <div id='ConteudoModel'>
+                  
+                 
+                  
+              </div>
+
+
+          </div>
+      </div>
+
+      <script src="menu.js"></script>
+      <script src="jq.js"></script>
+      <script>
+
+ </script>
+  </body>
+</html>
